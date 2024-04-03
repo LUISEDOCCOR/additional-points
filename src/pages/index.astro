@@ -8,5 +8,21 @@ import Nav from '../components/Nav.astro';
 <Layout title="Welcome to Astro.">
 	<header>
 		<Nav/>
+		<section class="mt-28 flex items-center gap-44 justify-center">
+			<article class="space-y-6">
+				<h1 class="font-semibold text-5xl">Sor Juana Inés de la Cruz</h1>
+				<h3 class="text-2xl">"Sin claridad no hay voz de sabiduría."</h3>
+			</article>
+			<article>
+				<picture class="h-72 w-72 overflow-hidden">
+					<img 
+					src="./header.webp" 
+					alt="Sor Juana Inés de la Cruz"
+					class="h-72 w-72 object-cover object-center rounded-full
+					hover:scale-105 transition-transform"
+					>
+				</picture>
+			</article>
+		</section>
 	</header>
 </Layout>
