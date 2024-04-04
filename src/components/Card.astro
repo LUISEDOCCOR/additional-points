@@ -1,0 +1,18 @@
+---
+const {image, content, rounded} = Astro.props
+---
+
+<article class="w-full p-4 border border-neutral-700 rounded-lg hover:scale-105 duration-200 transition-transform">
+    <picture class="flex justify-center">
+        <img 
+            class={`${rounded != "rounded-full" ? "w-28" : "h-28"} w-28 object-cover object-center ${rounded}`} 
+            src={image} 
+            alt={content} 
+            title="Sor Juana"
+        >
+    </picture>
+    <section class="text-center space-y-2 mt-8">
+        <p class="text-lg">"{content}"</p>
+        <h4 class="text-sm font-semibold">-Sor Juana Inés de la Cruz-</h4>
+    </section>
+</article>

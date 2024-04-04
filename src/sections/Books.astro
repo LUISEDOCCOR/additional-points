@@ -1,0 +1,26 @@
+---
+import Card from "../components/Card.astro";
+import CardInfo from "../components/CardInfo.astro";
+
+const books = [
+    "Contra la ignorancia de las mujeres",
+    "Finjamos que soy feliz",
+    "Poesía lírica",
+    "Antología poética",
+    "Poesía"
+]
+---
+<CardInfo noHover={true} title="Libros" id="books" reference="https://www.todostuslibros.com/autor/sor-juana-ines-de-la-cruz">
+    <article class="grid gap-4 xl:grid-cols-5">
+        {
+            books.map((book) => (
+                <Card
+                    content={book}
+                    image={`./books/${book}.webp`}
+                    rounded="rounded-sm"
+                />
+            ))
+        }
+    </article>
+</CardInfo>
+

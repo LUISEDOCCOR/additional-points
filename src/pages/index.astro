@@ -4,13 +4,16 @@ import Layout from '../layouts/Layout.astro';
 //Components
 import Nav from '../components/Nav.astro';
 //Sections
+import Home from '../sections/Home.astro';
 import WhoIsShe from '../sections/WhoIsShe.astro';
 import Achievements from '../sections/Achievements.astro';
 import History from '../sections/History.astro';
-import Home from '../sections/Home.astro';
+import Phrases from '../sections/Phrases.astro';
+import Books from '../sections/Books.astro';
+import Footer from '../sections/Footer.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Sor Juana Inés de la Cruz">
 	<header>
 		<Nav/>
 		<Home/>
@@ -21,5 +24,8 @@ import Home from '../sections/Home.astro';
 			<History/>
 			<Achievements/>
 		</section>
+		<Phrases/>
+		<Books/>
 	</main>
+	<Footer/>
 </Layout>	
